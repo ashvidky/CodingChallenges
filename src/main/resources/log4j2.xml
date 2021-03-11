@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict="true" monitorinterval="30">
+    
+    <Appenders>
+        <Console name="Console">
+            <ThresholdFilter level="debug" />
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %5p %c - [%t] %m%n" /> <!-- %d %p %C{1.} [%t] %m%n -->
+        </Console>
+    </Appenders>
+    <Loggers>
+       
+        <Logger name="com.test" level="debug" />
+        
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
